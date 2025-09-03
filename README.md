@@ -201,4 +201,4 @@ For issues, questions, or contributions, please open an issue on the project rep
 - Built with the Anthropic AI API
 - Uses uvx for seamless Python dependency management
 - Integrates with GNOME desktop environment
-- Uses dwarfbind for dynamic library bindings
+- Uses dwarfbind for dynamic library bindings 
