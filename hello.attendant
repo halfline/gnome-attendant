@@ -1,0 +1,30 @@
+# GNOME Attendant Example Script
+# This file demonstrates how to use the /import command
+# Lines starting with # are comments and will be ignored
+
+# Set up connection (replace with your values)
+/host localhost:3389
+/username myuser
+
+# Connect to the server
+/connect
+
+# Take a screenshot to see what's available
+/screenshot
+
+# Use natural language commands
+click on the applications menu
+open a terminal
+
+# Use specific commands
+/type echo "Hello from GNOME Attendant!"
+/key Return
+
+# Wait a moment
+/wait 2
+
+# Another natural language command
+close the terminal window
+
+# Show current status
+/status 
