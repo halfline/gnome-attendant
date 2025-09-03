@@ -1,0 +1,25 @@
+[project]
+name = "gnome-attendant"
+version = "1.0.0"
+description = "AI-Powered Desktop Automation via RDP"
+authors = [
+    {name = "Ray Strode", email = "rstrode@redhat.com"}
+]
+license = {text = "MIT"}
+requires-python = ">=3.12"
+dependencies = [
+    "pillow",
+    "anthropic",
+    "python-dotenv",
+    "rich",
+    "platformdirs",
+    "keyring",
+]
+
+[project.scripts]
+gnome-attendant = "gnome_attendant:main"
+
+[dependency-groups]
+dev = [
+    "dwarfbind>=0.1.2",
+]

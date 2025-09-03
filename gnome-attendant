@@ -1,0 +1,13 @@
+#!/bin/bash
+# GNOME Attendant - AI-Powered Desktop Automation
+# Launcher script that handles dependencies via uvx
+
+cd $(dirname "$0")
+exec uvx \
+    --with pillow \
+    --with anthropic \
+    --with python-dotenv \
+    --with rich \
+    --with platformdirs \
+    --with keyring \
+    python3 ./gnome_attendant.py "$@"
